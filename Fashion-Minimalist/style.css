@@ -25,6 +25,12 @@ header > .menubar {
   flex-direction: column;
   gap: 4px;
   z-index: 20;
+  transition: 0.5s ease-in-out;
+}
+header > .menubar.active {
+  position: fixed;
+  top: 13px;
+  right: 15px;
 }
 header > .menubar > span {
   width: 25px;
@@ -185,4 +191,15 @@ main > .text > h5 {
 }
 main > .text > p {
   text-align: justify;
+}
+
+@media only screen and (min-width: 768px) {
+  header {
+    padding: 15px 25px;
+  }
+  main {
+    padding: 15px 25px;
+    width: 50%;
+    margin: 0 auto;
+  }
 }
