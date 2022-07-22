@@ -1,6 +1,6 @@
 ## Screenshot
 
-![ss](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
+![ss](https://github.com/herisusantoarismann/OPO-project/blob/master/Fashion-Minimalist/Screenshot.png)
 
 ## Assets
 
