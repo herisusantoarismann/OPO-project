@@ -20,6 +20,26 @@ header > h1 {
   font-size: 20px;
   text-transform: uppercase;
 }
+header > .desktop {
+  display: none;
+}
+header > .desktop-auth {
+  display: none;
+}
+header > .desktop-auth {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 7px;
+}
+header > .desktop-auth > span {
+  height: 15px;
+  width: 1px;
+  background-color: #fcfff9;
+}
+header > .desktop-auth > h5:nth-child(3) {
+  font-weight: 300;
+  color: #888787;
+}
 header > .menubar {
   display: flex;
   flex-direction: column;
@@ -197,6 +217,10 @@ main > .text > p {
   header {
     padding: 15px 25px;
   }
+  header > .menubar.active {
+    top: 18px;
+    right: 25px;
+  }
   header > .mobile > ul {
     margin: 0 60px;
   }
@@ -204,5 +228,59 @@ main > .text > p {
     padding: 15px 25px;
     width: 50%;
     margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  header {
+    padding: 15px 45px;
+  }
+  header > .desktop {
+    display: block;
+  }
+  header > .desktop > ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+  }
+  header > .desktop-auth {
+    display: flex;
+  }
+  header > .menubar {
+    display: none;
+  }
+  header > .mobile {
+    display: none;
+  }
+  main {
+    padding: 45px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+  main > .banner {
+    width: 45%;
+  }
+  main > .banner > button {
+    padding: 10px 15px;
+    right: -65px;
+    bottom: 60px;
+  }
+  main > .text {
+    width: 65%;
+    gap: 40px;
+  }
+  main > .text > h4 {
+    width: 80%;
+    font-size: 35px;
+  }
+  main > .text > h5 {
+    font-size: 17px;
+  }
+  main > .text > p {
+    width: 70%;
+    text-align: start;
   }
 }
